@@ -4,9 +4,10 @@ name: renseki
 type: shield
 url: https://github.com/MessyRalph/zmk-config-renseki-own.git
 requires: [pro_micro]
-exposes: [i2c_oled]
 features:
   - keys
+boards:
+  -nice_nano_v2
 siblings:
   - renseki_left
   - renseki_right
