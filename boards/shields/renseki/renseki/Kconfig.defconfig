@@ -1,4 +1,4 @@
-if SHIELD_RENSEKI_RIGHT
+if SHIELD_RENSEKI_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "renseki"
