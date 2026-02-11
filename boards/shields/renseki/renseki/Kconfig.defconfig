@@ -1,16 +1,16 @@
-if SHIELD_RENSEKI_LEFT
+if SHIELD_RENSEKI_LEFT || SHIELD_RENSEKI_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "renseki"
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_RENSEKI_LEFT || SHIELD_RENSEKI_RIGHT
-
 config ZMK_SPLIT
     default y
+
+# Matrix size per side (3 rows + 1 thumb row = 4 rows, 5 columns)
+config ZMK_MATRIX_LAYOUT_ROWS
+    default 4
+
+config ZMK_MATRIX_LAYOUT_COLS
+    default 5
 
 endif
